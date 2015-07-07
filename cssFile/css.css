@@ -37,7 +37,7 @@ body{
   left:0;
   opacity:0;
 }
-/*.repeat-animation.ng-enter,
+.repeat-animation.ng-enter,
 .repeat-animation.ng-leave,
 .repeat-animation.ng-move {
   -webkit-transition: all linear 0.5s;
@@ -67,8 +67,8 @@ body{
 .repeat-animation.ng-move.ng-move-active {
   left:0;
   opacity: 1;
-}*/
-.repeat-animation.ng-enter, 
+}
+/*.repeat-animation.ng-enter, 
 .repeat-animation.ng-leave { 
     -webkit-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
     -moz-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
@@ -100,5 +100,5 @@ body{
     opacity: 1;
     height: 30px;
 }
-
+    */
    
