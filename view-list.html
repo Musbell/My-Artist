@@ -1,0 +1,30 @@
+﻿    <div class="input-group">
+        <span class="input-group-btn">
+            <button class="btn btn-default" type="button">Go!</button>
+        </span>
+        <input type="text" class="metro form-control" placeholder="Search for..." ng-model="search">
+    </div><br />
+    <table class="table table-striped table-hover">
+        <thead>
+            <tr>
+                <th><span class="glyphicon glyphicon-fire"></span></th>
+                <th>Artist name</th>
+                <th>Genre</th>
+                <th>Rating</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="item in data | filter:search" ng-click="editItem($index)" class="repeat-animation">
+                <td>*</td>
+                <td>{{item.name}}</td>
+                <td>{{item.genre}}</td>
+                <td>{{item.rating}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <br />
+    <div class="btn-group">
+        <button type="button" class=" metro btn btn-primary" ng-click="addArtist()">Add Artist</button>
+    </div>
+
+
